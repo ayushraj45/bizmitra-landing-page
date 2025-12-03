@@ -19,6 +19,8 @@ const PrivacyPolicyPage: React.FC = () => {
             <li><strong>User Instructions and Data:</strong> Any instructions, FAQs, pricing information, and business-specific data you provide for the AI to use in conversations.</li>
             <li><strong>Conversation Data:</strong> The content of conversations between your clients and the BizMitra AI agent to operate and enhance the service.</li>
             <li><strong>Calendar Information:</strong> To schedule and reschedule appointments, we require access to your connected calendar to view free/busy slots. We do not store the details of your personal events.</li>
+            <li><strong>Information From Your Google Account:</strong> We do not access or store any other information from your Google Account except calendar information as mentioned above.</li>
+        
           </ul>
 
           <h2 className="text-2xl font-bold text-brand-dark mt-8">2. How We Use Your Information</h2>
@@ -30,6 +32,10 @@ const PrivacyPolicyPage: React.FC = () => {
             <li>To communicate with you about your account and provide customer support.</li>
             <li>To monitor and analyze usage to improve the Service's performance and accuracy.</li>
           </ul>
+
+          <h2 className="text-2xl font-bold text-brand-dark mt-8">2.1 How We Use or Share Data From Google</h2>
+          <p>BizMitra accesses your Google Calendar data with your explicit consent solely to manage event bookings for your business. We MAY only use this data to send reminders and notifications to the persons for whom those appointments are intended, via selected messaging channels. We do not share, transfer, or disclose your Google user data to any other third parties for any purpose</p>
+
 
           <h2 className="text-2xl font-bold text-brand-dark mt-8">3. Data Storage and Security</h2>
           <p>We implement reasonable security measures to protect your information. However, no electronic storage or transmission over the internet is completely secure. While we strive to use commercially acceptable means to protect your data, we cannot guarantee its absolute security. Data is stored on secure cloud servers, and access is strictly limited.</p>
@@ -44,7 +50,7 @@ const PrivacyPolicyPage: React.FC = () => {
           <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new policy on this page. You are advised to review this Privacy Policy periodically for any changes.</p>
 
           <h2 className="text-2xl font-bold text-brand-dark mt-8">7. Contact Us</h2>
-          <p>If you have any questions about this Privacy Policy, please <Link to="/contact" className="text-brand-highlight hover:underline">contact us</Link>. Or email us at: bizmitraai@gmail.com</p>
+          <p>If you have any questions about this Privacy Policy, please <Link to="/contact" className="text-brand-highlight hover:underline">contact us</Link>. Or email us at: hello@bizmitra-ai.com</p>
         </div>
       </div>
     </div>

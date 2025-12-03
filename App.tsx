@@ -12,6 +12,15 @@ import TermsOfServicePage from './pages/TermsOfServicePage';
 const AppContent: React.FC = () => {
   const location = useLocation();
 
+  // UTM source detection and storage
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const utmSource = params.get('utm_source');
+    if (utmSource) {
+      localStorage.setItem('utm_source', utmSource);
+    }
+  }, []); // Run only once on mount
+
   useEffect(() => {
     // If there's a hash, scroll to the element. Otherwise, scroll to the top.
     if (location.hash) {

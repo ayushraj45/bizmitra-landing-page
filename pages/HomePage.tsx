@@ -5,6 +5,7 @@ import TargetIcon from '../components/icons/TargetIcon';
 import HeartIcon from '../components/icons/HeartIcon';
 import CalendarIcon from '../components/icons/CalendarIcon';
 import MoonIcon from '../components/icons/MoonIcon';
+import { redirectToApp } from '../utmRedirect';
 
 const CATCHPHRASES = [
   "No more CRM. No more chasing leads.",
@@ -38,20 +39,21 @@ const HeroSection: React.FC = () => (
     <div className="mx-auto max-w-7xl px-6 pt-10 pb-24 sm:pb-32 lg:flex lg:items-center lg:justify-between lg:py-40 lg:px-8">
       <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl lg:flex-shrink-0 lg:pt-8 text-center lg:text-left">
         <h1 className="text-4xl font-bold tracking-tight text-brand-dark sm:text-6xl animate-fade-in-up">
-          Your Trusted Business Friend on WhatsApp
+          Your Trusted Business Friend on WhatsApp and Website
         </h1>
         <p className="mt-6 text-lg leading-8 text-gray-700 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-          No more endless questions. No more scheduling stress. Let your WhatsApp do the heavy lifting so you can do what you love.
+          No more endless questions. No more scheduling stress. Let BizMitra do the heavy lifting so you can do what you love.
         </p>
         <div className="mt-10 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
           <CatchphraseCarousel />
         </div>
         <div className="mt-10 flex items-center justify-center lg:justify-start gap-x-6 animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
           <Link
-            to="/pricing"
+            to="#"
             className="rounded-md bg-brand-highlight px-5 py-3 text-base font-semibold text-white shadow-lg hover:bg-brand-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500 transition-transform transform hover:scale-105"
+            onClick={(e) => { e.preventDefault(); redirectToApp(); }}
           >
-            Bring BizMitra to WhatsApp
+            Activate BizMitra
           </Link>
         </div>
       </div>
@@ -123,7 +125,7 @@ const BenefitsSection: React.FC = () => (
 );
 
 const howItWorksSteps = [
-    { name: 'Connect', description: 'Connect your WhatsApp Business number and calendar.' },
+    { name: 'Connect', description: 'Connect your Website or WhatsApp Business number and calendar.' },
     { name: 'Personalize', description: 'Set BizMitra’s tone and response style to what suits YOUR brand' },
     { name: 'Instruct', description: 'Add FAQs, service info, pricing or let BizMitra ask qualifying questions.' },
     { name: 'Go Live', description: 'BizMitra goes live: answers queries, books and reschedules, escalates only complex cases.' },
@@ -198,8 +200,8 @@ const TargetAudienceSection: React.FC = () => (
   <div id="get-started" className="bg-brand-light py-24 sm:py-32">
     <div className="mx-auto max-w-7xl px-6 lg:px-8">
       <div className="mx-auto max-w-2xl lg:text-center">
-        <h2 className="text-base font-semibold leading-7 text-brand-highlight">Perfect for Freelancers, Agencies & Service Pros In India</h2>
-        <p className="mt-2 text-3xl font-bold tracking-tight text-brand-dark sm:text-4xl">(But powerful for anyone.)</p>
+        <h2 className="text-base font-semibold leading-7 text-brand-highlight">Perfect for Freelancers, Agencies & Service Pros</h2>
+        <p className="mt-2 text-3xl font-bold tracking-tight text-brand-dark sm:text-4xl">But powerful for anyone.</p>
       </div>
       <div className="mx-auto mt-16 grid max-w-lg grid-cols-1 gap-12 sm:mt-20 lg:mt-24 lg:max-w-none lg:grid-cols-3">
         {audience.map((person) => (

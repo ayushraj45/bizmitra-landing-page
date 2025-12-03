@@ -11,7 +11,7 @@ const OfferStrip: React.FC = () => {
 
   return (
     <div className="bg-brand-dark text-white relative text-center p-2 text-sm font-semibold">
-      <p>🎉 Limited Time Offer: Get 20% off your first 3 months! 🎉</p>
+      <p>🎉Introductory Offer: Get 70% off your first 6 months! 🎉</p>
       <button 
         onClick={() => setVisible(false)}
         className="absolute top-1/2 right-4 -translate-y-1/2 text-white/70 hover:text-white"

@@ -46,7 +46,7 @@ const TermsOfServicePage: React.FC = () => {
           <p>These Terms shall be governed and construed in accordance with the laws of India, without regard to its conflict of law provisions.</p>
 
           <h2 className="text-2xl font-bold text-brand-dark mt-8">6. Contact Us</h2>
-          <p>If you have any questions about these Terms, please <Link to="/contact" className="text-brand-highlight hover:underline">contact us</Link>. Or email us at bizmitraai@gmail.com</p>
+          <p>If you have any questions about these Terms, please <Link to="/contact" className="text-brand-highlight hover:underline">contact us</Link>. Or email us at: hello@bizmitra-ai.com</p>
         </div>
       </div>
     </div>
